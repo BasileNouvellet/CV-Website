@@ -1,19 +1,24 @@
 import { Injectable } from '@angular/core';
-import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
+import { Observable } from 'rxjs/Observable';
+import { AngularFireAuth } from 'angularfire2/auth';
+
+import * as firebase from 'firebase/app';
 
 @Injectable()
 export class AuthService {
 
-  constructor(public af: AngularFire) { }
+  user: Observable<firebase.User>;
+  afAuth: any;
 
-  loginWithGoogle() {
-    return this.af.auth.login({
-      provider: AuthProviders.Google,
-      method: AuthMethods.Popup
-    });
+  constructor(afAuth: AngularFireAuth) {
+    this.afAuth = afAuth;
+    this.user = afAuth.authState; // only triggered on sign-in/out (for old behavior use .idToken)
   }
 
+  loginWithGoogle() {
+    return this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+  }
   logout() {
-    return this.af.auth.logout();
+    return this.afAuth.auth.signOut();
   }
 }
