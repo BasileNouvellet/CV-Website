@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import {AuthService} from './providers/auth.service';
+import { AuthService } from './providers/auth.service';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database-deprecated';
 
 import * as firebase from 'firebase/app';
+import {AngularFireAuth} from "angularfire2/auth";
 
 @Component({
   selector: 'app-root',
@@ -15,16 +16,20 @@ export class AppComponent {
   private isLoggedIn: Boolean;
   private user_displayName: String;
   private user_email: String;
+  private authState: any;
+  private user: any;
 
   items: FirebaseListObservable<any[]>;
 
-  constructor(public authService: AuthService,
+  constructor(public afAuth: AngularFireAuth,
+              public _authService: AuthService,
               private router: Router,
-              db: AngularFireDatabase) {
+              private db: AngularFireDatabase) {
+
     this.items = db.list('/items');
-    this.authService.afAuth.suscribe (
-      (auth: firebase.auth.Auth) => {
-        if (auth == null) {
+    this.user = afAuth.authState;
+    afAuth.authState.subscribe((user: firebase.User) => {
+        if (user == null) {
             console.log('Logged out');
             this.isLoggedIn = false;
             this.user_displayName = '';
@@ -32,10 +37,10 @@ export class AppComponent {
             this.router.navigate(['login']);
           } else {
             this.isLoggedIn = true;
-            this.user_displayName = auth.google.displayName;
-            this.user_email = auth.google.email;
+            this.user_displayName = user.displayName;
+            this.user_email = user.email;
             console.log('Logged in');
-            console.log(auth);
+            console.log(user);
             this.router.navigate(['']);
           }
       }
@@ -43,7 +48,7 @@ export class AppComponent {
   }
 
   logout() {
-    this.authService.logout().then((data) => {
+    this._authService.logout().then((data) => {
       this.router.navigate(['login']);
     });
   }
