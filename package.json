@@ -1,0 +1,29 @@
+{
+  "name": "cv-website",
+  "version": "1.0.0",
+  "description": "Online resume of Basile NOUVELLET",
+  "main": "karma.conf.js",
+  "dependencies": {
+    "angularfire2": "^5.0.0-rc.6",
+    "bootstrap": "^4.0.0-beta.3",
+    "firebase": "^4.9.1",
+    "git": "^0.1.5",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.6.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BasileNouvellet/CV-Website.git"
+  },
+  "author": "Basile NOUVELLET",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BasileNouvellet/CV-Website/issues"
+  },
+  "homepage": "https://github.com/BasileNouvellet/CV-Website#readme"
+}
