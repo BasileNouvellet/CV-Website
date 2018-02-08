@@ -18,7 +18,8 @@ import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   { path: '', component: AppComponent },
-  { path: 'login', component: LoginPageComponent }
+  { path: 'login', component: LoginPageComponent },
+  { path: '*', redirectTo: 'login'}
 ];
 
 @NgModule({

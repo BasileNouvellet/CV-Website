@@ -1,16 +1,11 @@
-<main role="main" class="inner cover">
-  <h1 class="cover-heading">Welcome, I'm Basile !</h1>
-  <h2 class="lead">I'm looking for a 6-months internship in Singapore, starting in June 2018</h2>
-  <p class="lead">
-    <a href="#" class="btn btn-lg btn-secondary">Show my studies</a>
-  </p>
+<div id="cover-container" class="d-flex h-100 p-3 mx-auto">
 
+  <!--Navbar-->
   <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="http://codingthesmartway.com">CodingTheSmartWay.com</a>
-        </div>
+          Log in infos            </div>
         <div *ngIf="isLoggedIn">
           <p class="navbar-text navbar-right">Logged In: {{user_displayName}} ({{user_email}})<p>
         </div>
@@ -19,16 +14,31 @@
         </div>
       </div>
     </nav>
-    <router-outlet></router-outlet>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="jumbotron">
-        <h1>Welcome</h1>
-        <p>You should only be able to see that page when you're logged in!</p>
-        <p><button class="btn btn-default" (click)="logout()">Logout</button></p>
+  <!--Main content-->
+  <div>
+    <main role="main" class="inner cover">
+      <h1 class="cover-heading">Welcome, I'm Basile !</h1>
+      <h2 class="lead">I'm looking for a 6-months internship in Singapore, starting in June 2018</h2>
+      <p class="lead">
+        <a href="#" class="btn btn-lg btn-secondary">Show my studies</a>
+      </p>
+
+      <div class="container">
+        <div class="row">
+          <div class="jumbotron">
+            <h1>Welcome</h1>
+            <p>You should only be able to see that page when you're logged in!</p>
+            <p><button class="btn btn-default" (click)="logout()">Logout</button></p>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
   </div>
-</main>
+</div>
+
+
+<div>
+  <app-navbar></app-navbar>
+</div>
