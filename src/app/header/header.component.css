@@ -1,0 +1,80 @@
+.header_frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.03em solid #b1b1b1;
+}
+
+.first_bar {
+  width: 100%;
+  height: 2em;
+  background-color: #414141;
+  border: 1em solid #414141;
+  box-shadow: 0 0.2em 0.2em #353535;
+
+  z-index: 2;
+}
+
+.second_bar {
+  width: 100%;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  background-color: #595959;
+  color: #ffffff;
+  padding: 0.5em;
+  border: 1em solid #595959;
+  box-shadow: 0 0.2em 0.2em #b1b1b1;
+}
+
+.bio_section {
+  width: 80%;
+  height: auto;
+  padding: 0.5em;
+  padding-top: 5em;
+  margin-top: 1.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+.profil_picture {
+  width: 13%;
+  border-radius: 50%;
+  position: relative;
+  float: bottom;
+  transform: translate(0em, 1em);
+  background-color: white;
+  padding: 0.2em;
+  box-shadow: 0 0 1em #595959;
+  z-index: 3;
+}
+.social_media {
+  color: grey;
+}
+
+.bio_text {
+
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.title {
+  font-weight: lighter;
+  font-size: 0.8em;
+}
+
+.subtitle {
+  color: #353535;
+  margin: 1em;
+}
