@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Subject} from 'rxjs/Subject';
+import {debounceTime} from 'rxjs/operator/debounceTime';
 
 @Component({
   selector: 'app-header',
@@ -6,14 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  private _success = new Subject<string>();
+  successMessage: string;
 
   constructor() {}
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this._success.subscribe((message) => this.successMessage = message);
+    debounceTime.call(this._success, 4000).subscribe(() => this.successMessage = null);
+  }
+
+  public changeSuccessMessage() {
+    this._success.next('Email (basile.nouvellet@ponts.org) successfully copied !');
   }
 
   copyTextToClipboard(text) {
-    var txtArea = document.createElement("textarea");
+    const txtArea = document.createElement('textarea');
 
     txtArea.style.position = 'fixed';
     txtArea.style.top = '0';
@@ -23,10 +33,10 @@ export class HeaderComponent implements OnInit {
     document.body.appendChild(txtArea);
     txtArea.select();
     try {
-      var successful = document.execCommand('copy');
-      var msg = successful ? 'successful' : 'unsuccessful';
+      const successful = document.execCommand('copy');
+      const msg = successful ? 'successful' : 'unsuccessful';
       console.log('Copying text command was ' + msg);
-      if(successful){
+      if (successful) {
         return true;
       }
     } catch (err) {
@@ -37,10 +47,11 @@ export class HeaderComponent implements OnInit {
   }
 
   copyMailToClipboard() {
-    var textToCopy = "basile.nouvellet@ponts.org";
-    let result = this.copyTextToClipboard(textToCopy);
+    const textToCopy = 'basile.nouvellet@ponts.org';
+    const result = this.copyTextToClipboard(textToCopy);
     if (result) {
       console.log('Copied to Clipboard');
+      this.changeSuccessMessage();
     }
   }
 

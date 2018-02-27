@@ -4,6 +4,7 @@
   "description": "Online resume of Basile NOUVELLET",
   "main": "karma.conf.js",
   "dependencies": {
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0",
     "angularfire2": "^5.0.0-rc.6",
     "bootstrap": "^4.0.0-beta.3",
     "firebase": "^4.9.1",
