@@ -14,16 +14,22 @@ a:hover {
 
 /* Custom default button */
 .btn-secondary,
-.btn-secondary:hover,
 .btn-secondary:focus {
   color: white;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: cornflowerblue;
-  border: .05rem solid #fff;
+  border: .05rem solid transparent;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.6em;
   margin: 0.7em;
+}
+
+.btn-secondary:hover {
+  color: #595959;
+  background-color: cornflowerblue;
+  border: .05rem solid transparent;
+  box-shadow: 0 0.2em 0.2em #b1b1b1;
 }
 
 
