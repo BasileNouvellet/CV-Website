@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   border: 0.03em solid #b1b1b1;
+  padding-bottom: 2em;
 }
 
 .first_bar {
@@ -35,7 +36,7 @@
   width: 80%;
   height: auto;
   padding: 0.5em;
-  padding-top: 5em;
+  padding-top: 4em;
   margin-top: 1.25em;
   display: flex;
   flex-direction: column;
@@ -56,8 +57,21 @@
   box-shadow: 0 0 1em #595959;
   z-index: 3;
 }
+
 .social_media {
   color: grey;
+}
+
+.social_icon {
+  margin: 0 0.6em 0 0.6em;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.social_icon:hover {
+  transform: scale(1.1,1.1);
+  opacity: 0.6;
+  filter: alpha(opacity=60) !important; /* For IE8 and earlier */
 }
 
 .bio_text {
