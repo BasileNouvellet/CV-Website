@@ -92,3 +92,7 @@
   color: #353535;
   margin: 1em;
 }
+.popup {
+  margin: 0.8em 0.8em -1em;
+  transition: 0.25s all;
+}

@@ -18,7 +18,7 @@
       </a>
     </div>
 
-    <ngb-alert *ngIf="successMessage" type="success" (close)="successMessage = null" style="margin: 0.8em 0.8em -1em;">{{ successMessage }}</ngb-alert>
+    <ngb-alert *ngIf="successMessage" type="success" (close)="successMessage = null" class="popup">{{ successMessage }}</ngb-alert>
 
     <div class="subtitle">I'm looking for a 6-month internship in Singapore, starting in June 2018</div>
 
@@ -32,7 +32,7 @@
       <p>
         test
       </p>
-      <!--TODO-->
+      <!--TODO: Write this section-->
     </div>
 
     <p class="lead">
@@ -40,7 +40,7 @@
          href="assets/Resume_Basile_NOUVELLET.pdf"
          download="Resume_Basile_NOUVELLET.pdf"
          class="btn btn-lg btn-secondary">Download CV</a>
-      <a href="mailto:basile.nouvellet@ponts.org" class="btn btn-lg btn-secondary">Contact me</a>
+      <a target="_blank" href="mailto:basile.nouvellet@ponts.org" class="btn btn-lg btn-secondary">Contact me</a>
     </p>
 
   </div>
