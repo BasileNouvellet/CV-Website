@@ -1,48 +1,59 @@
-ul {
-  padding: 0;
-  margin: 0;
-}
 .experiences_frame {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 0.03em solid #b1b1b1;
+  border-top: 0 solid transparent;
   padding: 2em;
+  padding-top: 0;
   margin-bottom: 5em;
+  position: relative;
+}
+
+.experiences_title {
+  color: #b1b1b1;
+  padding: 1.3em;
+  font-weight: bold;
+  font-size: 1.7em;
 }
 
 .event {
-  height: 10em;
+  /*height: 10em;*/
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: relative;
 }
 
 .event_reverse {
-  height: 10em;
+  /*height: 10em;*/
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
   align-items: flex-start;
+  position: relative;
 }
 
 .event:after {
   content: " ";
   width: 0.15em;
-  height: inherit;
+  height: 100%;
   background-color: #b1b1b1;
   position: absolute;
   right: 50%;
+  top: 0;
 }
 
 .event_reverse:after {
   content: " ";
   width: 0.15em;
-  height: inherit;
+  height: 100%;
   background-color: #b1b1b1;
   position: absolute;
   right: 50%;
@@ -52,23 +63,44 @@ ul {
 
 .event_card {
   width: 40%;
-  padding: 0.5em;
-  border: 0 solid transparent;
+  padding: 1em;
+  border: 0.02em solid rgba(65,65,65,0.15);
 }
 
 .event_card:after {
   content: "";
   width: 1.5em;
   height: 1.5em;
-  box-shadow: -0.02em -0.02em 0 rgba(65,65,65,0.2);
-  border-radius: 0.2em;
+  /*box-shadow: -0.02em -0.02em 0 rgba(65,65,65,0.2);*/
+  border-top: 0.02em solid rgba(65,65,65,0.15);
+  border-left: 0.02em solid rgba(65,65,65,0.15);
+  border-top-left-radius: 0.2em;
   position: absolute;
-  top: 0.5em;
-  right: -0.6em;
+  top: 2em;
+  right: -0.765em;
   transform: rotate(135deg);
   background-color: white;
+}
 
+.event_card_reverse {
+  width: 40%;
+  padding: 1em;
+  border: 0.02em solid rgba(65,65,65,0.15);
+}
 
+.event_card_reverse:after {
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  /*box-shadow: -0.02em -0.02em 0 rgba(65,65,65,0.2);*/
+  border-bottom: 0.02em solid rgba(65,65,65,0.15);
+  border-right: 0.02em solid rgba(65,65,65,0.15);
+  border-bottom-right-radius: 0.2em;
+  position: absolute;
+  top: 2em;
+  left: -0.765em;
+  transform: rotate(135deg);
+  background-color: white;
 }
 
 .event_card_title {
@@ -77,6 +109,16 @@ ul {
 }
 
 .event_card_body {
-
 }
 
+.event_date {
+  color: cornflowerblue;
+  font-weight: bold;
+  z-index: 3;
+  background-color: white;
+  border-radius: 0.3em;
+  padding: 0.4em;
+  position: absolute;
+  top: 1.8em;
+  right: -14.745em;
+}

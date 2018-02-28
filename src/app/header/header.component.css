@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   border: 0.03em solid #b1b1b1;
+  border-bottom: 0 solid transparent;
   padding-bottom: 2em;
 }
 
@@ -34,7 +35,7 @@
 .bio_section {
   width: 80%;
   height: auto;
-  padding: 4em 0.5em 0.5em;
+  padding: 5em 0.5em 0.5em;
   margin-top: 1.25em;
   display: flex;
   flex-direction: column;
@@ -57,6 +58,7 @@
 
 .social_media {
   color: grey;
+  margin-bottom: 0.4em;
 }
 
 .social_icon {
@@ -76,18 +78,20 @@
 }
 
 .name {
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 1.1em;
 }
 
 .title {
   font-weight: lighter;
   font-size: 0.8em;
+  padding: 1em;
 }
 
 .subtitle {
   color: #353535;
   margin: 1em;
+  font-weight: bold;
 }
 .popup {
   margin: 0.8em 0.8em -1em;
