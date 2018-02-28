@@ -26,10 +26,10 @@ a:hover {
 }
 
 .btn-secondary:hover {
-  color: #b1b1b1;
+  opacity: 0.8;
   background-color: cornflowerblue;
   border: .05rem solid transparent;
-  box-shadow: 0 0.2em 0.2em #b1b1b1;
+  box-shadow: 0 0.2em 0.2em rgba(65,65,65,0.2);
 }
 
 
