@@ -13,7 +13,6 @@
   background-color: #414141;
   border: 1em solid #414141;
   box-shadow: 0 0.2em 0.2em #353535;
-
   z-index: 2;
 }
 
@@ -35,8 +34,7 @@
 .bio_section {
   width: 80%;
   height: auto;
-  padding: 0.5em;
-  padding-top: 4em;
+  padding: 4em 0.5em 0.5em;
   margin-top: 1.25em;
   display: flex;
   flex-direction: column;
