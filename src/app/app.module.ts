@@ -17,6 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import { EducationComponent } from './education/education.component';
 
 
 const routes: Routes = [
@@ -32,7 +33,8 @@ const routes: Routes = [
     FooterComponent,
     LoginPageComponent,
     HeaderComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
