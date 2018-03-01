@@ -3,9 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 0.03em solid #b1b1b1;
-  border-top: 0 solid transparent;
-  border-bottom: 0 solid transparent;
   padding: 2em;
   padding-top: 0;
   margin-bottom: 5em;
@@ -66,7 +63,7 @@
 
 
 .event_card {
-  width: 45%;
+  width: 41%;
   padding: 1em;
   border: 0.02em solid rgba(65,65,65,0.15);
 }
@@ -87,7 +84,7 @@
 }
 
 .event_card_reverse {
-  width: 45%;
+  width: 41%;
   padding: 1em;
   border: 0.02em solid rgba(65,65,65,0.15);
 }
@@ -130,7 +127,22 @@
 .event_date {
   color: #A5D6A7;
   font-weight: bold;
-  font-size: 0.7em;
-  padding: 0.2em 0.4em 0.2em 0;
+  font-size: 0.8em;
   width: fit-content;
+  position: relative;
+  padding: 0.2em 0.4em 0.2em 0;
+}
+
+.event_card_company {
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 0.2em 0.4em 0.2em 0;
+}
+
+.event_card_logo {
+  position: absolute;
+  padding: 0.8em;
+  z-index: 3;
+  background-color: whitesmoke;
 }

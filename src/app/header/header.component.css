@@ -3,8 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 0.03em solid #b1b1b1;
-  border-bottom: 0 solid transparent;
   padding-bottom: 2em;
 }
 
@@ -45,13 +43,14 @@
 }
 
 .profil_picture {
-  width: 13%;
+  width: 15%;
   border-radius: 50%;
   position: relative;
   float: bottom;
-  transform: translate(0em, 1em);
+  /*transform: translate(0em, 0.5em);*/
   background-color: white;
   padding: 0.2em;
+  border: 0.3em solid #595959;
   box-shadow: 0 0 1em #595959;
   z-index: 3;
 }
