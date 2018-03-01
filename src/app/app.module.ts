@@ -18,6 +18,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { EducationComponent } from './education/education.component';
+import { SkillsComponent } from './skills/skills.component';
+import { LanguagesComponent } from './languages/languages.component';
 
 
 const routes: Routes = [
@@ -34,7 +36,9 @@ const routes: Routes = [
     LoginPageComponent,
     HeaderComponent,
     ExperiencesComponent,
-    EducationComponent
+    EducationComponent,
+    SkillsComponent,
+    LanguagesComponent
   ],
   imports: [
     BrowserModule,

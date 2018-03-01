@@ -1,4 +1,4 @@
-.experiences_frame {
+.education_frame {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,8 +12,8 @@
   position: relative;
 }
 
-.experiences_title {
-  color: #4CAF50;
+.education_title {
+  color: #009688;
   padding: 1.3em;
   font-weight: bold;
   font-size: 1.7em;
@@ -47,7 +47,7 @@
   content: " ";
   width: 0.15em;
   height: 100%;
-  background-color: #A5D6A7;
+  background-color: #80CBC4;
   position: absolute;
   right: 50%;
   top: 0;
@@ -57,10 +57,10 @@
   content: " ";
   width: 0.15em;
   height: 100%;
-  background-color: #A5D6A7;
+  background-color: #80CBC4;
   position: absolute;
-  top: 0;
   right: 50%;
+  top: 0;
 }
 
 
@@ -83,7 +83,7 @@
   top: 1.45em;
   right: -0.765em;
   transform: rotate(135deg);
-  background-color: #4CAF50;
+  background-color: #009688;
 }
 
 .event_card_reverse {
@@ -104,21 +104,21 @@
   top: 1.45em;
   left: -0.765em;
   transform: rotate(135deg);
-  background-color: #4CAF50;
+  background-color: #009688;
 }
 
 .event_card_heading {
-  background-color: #4CAF50;
+  background-color: #009688;
   margin: -1em -1em 0 -1em;
   padding: 0.8em 0.8em 0.8em 1em;
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
   box-shadow: 0 0.3em 1em 0 rgba(65, 65, 65, 0.2);
+
 }
 
 .event_card_title {
   font-weight: bold;
-  font-size: 1.1em;
   color: white;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .event_date {
-  color: #A5D6A7;
+  color: #80CBC4;
   font-weight: bold;
   font-size: 0.7em;
   padding: 0.2em 0.4em 0.2em 0;

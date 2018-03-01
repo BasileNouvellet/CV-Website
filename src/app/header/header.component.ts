@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this._success.subscribe((message) => this.successMessage = message);
     debounceTime.call(this._success, 4000).subscribe(() => this.successMessage = null);
-  }
+}
 
   public changeSuccessMessage() {
     this._success.next('Email (basile.nouvellet@ponts.org) successfully copied !');
