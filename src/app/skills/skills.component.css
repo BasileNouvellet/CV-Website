@@ -27,24 +27,32 @@
 
 .skills_card {
   width: 20%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  content: "";
+  background-color: #9FA8DA;
+  width: 0.15em;
 }
 
 .skills_card_heading {
   background-color: #3F51B5;
   /*margin: -1em -1em 0 -1em;*/
-  padding: 0.8em 0.8em 0.8em 1em;
+  padding: 0.8em 3em 0.8em 3em;
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
   box-shadow: 0 0.3em 1em 0 rgba(65, 65, 65, 0.2);
-}
-
-.skills_card_title {
   font-weight: bold;
   font-size: 1.1em;
   color: white;
+  margin: auto;
 }
 
 .skills_card_body {
-  padding: 0.4em;
-  text-align: justify;
+  padding: 0.8em 0.4em 0.8em 2em;
+  /*text-align: justify;*/
+  margin: auto;
 }
