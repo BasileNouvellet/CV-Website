@@ -153,6 +153,52 @@
 
 .location {
   float: right;
-  font-size: small;
+  font-size: 0.8em;
   color: #595959;
 }
+
+
+@media screen and (max-width: 425px){
+
+  .event {
+    justify-content: center;
+  }
+
+  .event_reverse {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .event_card {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .event_card_reverse {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .event:after {
+    width: 0;
+  }
+
+  .event_reverse:after {
+    width: 0;
+  }
+
+  .event_card:after {
+    width: 0;
+    border: transparent;
+  }
+  .event_card_reverse:after {
+    width: 0;
+    border: transparent;
+  }
+
+  .event_card_logo {
+    width: 0;
+    background: transparent;
+  }
+}
+

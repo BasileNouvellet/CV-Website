@@ -33,8 +33,9 @@
 .bio_section {
   width: 80%;
   height: auto;
-  padding: 5em 0.5em 0.5em;
-  margin-top: 1.25em;
+  padding: 0em 0.5em 0.5em;
+  padding-top: 7%;
+  margin-top: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +74,7 @@
 }
 
 .bio_text {
-
+  padding: 2em;
 }
 
 .name {
@@ -95,4 +96,18 @@
 .popup {
   margin: 0.8em 0.8em -1em;
   transition: 0.25s all;
+}
+
+@media screen and (max-width: 425px) {
+  .bio_text {
+    text-align: justify;
+  }
+
+  .bio_section {
+    padding-top: 5%;
+  }
+
+  .btn {
+    font-size: 0.4em;
+  }
 }

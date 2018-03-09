@@ -62,3 +62,18 @@ li {
 .skills_card_body {
   padding: 0.5em;
 }
+
+@media screen and (max-width: 425px) {
+  .skills_cards_frame {
+    flex-direction: column;
+  }
+
+  .skills_card {
+    width: 100%;
+  }
+
+  .bar {
+    width: 0;
+  }
+
+}

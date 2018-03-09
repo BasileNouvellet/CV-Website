@@ -76,3 +76,10 @@
   /*-o-transform: scale(0.95) rotate(-330deg);*/
   /*transform: scale(0.95) rotate(-330deg);*/
 /*}*/
+
+@media screen and (max-width: 425px){
+  .languages_circle {
+    width: 7em;
+    height: 7em;
+  }
+}
