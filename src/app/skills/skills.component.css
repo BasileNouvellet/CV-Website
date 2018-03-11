@@ -34,7 +34,7 @@ li {
 }
 
 .skills_card {
-  width: 30%;
+  width: 32%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,8 @@ li {
 .bar {
   content: "";
   background-color: #9FA8DA;
-  width: 0.15em;
+  /*width: 0.15em;*/
+  width: 0;
 }
 
 .skills_card_heading {
@@ -61,6 +62,7 @@ li {
 
 .skills_card_body {
   padding: 0.5em;
+  background-color: #E8EAF6;
 }
 
 @media screen and (max-width: 425px) {

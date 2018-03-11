@@ -157,6 +157,10 @@
   background-color: whitesmoke;
 }
 
+.ghost {
+  height: 5em;
+}
+
 @media screen and (max-width: 425px){
 
   .event {
@@ -198,5 +202,9 @@
   .event_card_logo {
     width: 0;
     background: transparent;
+  }
+
+  .ghost {
+    height: 0;
   }
 }
