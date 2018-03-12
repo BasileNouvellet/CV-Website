@@ -20,6 +20,7 @@ import { ExperiencesComponent } from './experiences/experiences.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { LanguagesComponent } from './languages/languages.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 const routes: Routes = [
@@ -38,7 +39,8 @@ const routes: Routes = [
     ExperiencesComponent,
     EducationComponent,
     SkillsComponent,
-    LanguagesComponent
+    LanguagesComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
