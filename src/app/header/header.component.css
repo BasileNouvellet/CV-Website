@@ -98,7 +98,7 @@
   transition: 0.25s all;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .bio_text {
     text-align: justify;
   }

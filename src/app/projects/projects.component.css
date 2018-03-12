@@ -54,7 +54,7 @@
   text-align: justify;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .projects_cards_frame {
     flex-direction: column;
   }

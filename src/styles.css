@@ -67,6 +67,12 @@ body {
   margin: auto;
 }
 
+@media screen and (max-width: 600px) {
+  #cover-container {
+    max-width: 40em;
+  }
+}
+
 .card {
   border-radius: 0.3em;
   box-shadow: 0 0.3em 1em 0 rgba(65, 65, 65, 0.2);
