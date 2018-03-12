@@ -51,6 +51,7 @@
 .projects_card_body {
   padding: 1em;
   /*background-color: #E6EE9C;*/
+  text-align: justify;
 }
 
 @media screen and (max-width: 425px) {

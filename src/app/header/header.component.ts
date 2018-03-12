@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Subject} from 'rxjs/Subject';
 import {debounceTime} from 'rxjs/operator/debounceTime';
 
@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
     this._success.next('Email (basile.nouvellet@ponts.org) successfully copied !');
   }
 
-  copyTextToClipboard(text) {
+  static copyTextToClipboard(text) {
     const txtArea = document.createElement('textarea');
 
     txtArea.style.position = 'fixed';
@@ -48,7 +48,7 @@ export class HeaderComponent implements OnInit {
 
   copyMailToClipboard() {
     const textToCopy = 'basile.nouvellet@ponts.org';
-    const result = this.copyTextToClipboard(textToCopy);
+    const result = HeaderComponent.copyTextToClipboard(textToCopy);
     if (result) {
       console.log('Copied to Clipboard');
       this.changeSuccessMessage();

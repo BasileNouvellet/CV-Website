@@ -12,8 +12,7 @@ li {
   align-items: center;
   justify-content: center;
   margin-bottom: 3em;
-  padding: 2em;
-  padding-top: 0;
+  padding: 0 2em 2em;
 }
 
 .skills_cards_frame {
@@ -38,6 +37,7 @@ li {
   position: relative;
   display: flex;
   flex-direction: column;
+  padding: 0.5em 0 0.5em 0;
 }
 
 .bar {

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import {Component} from '@angular/core';
+// import { Router } from '@angular/router';
 
 // import { AuthService } from './providers/auth.service';
 // import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database-deprecated';
