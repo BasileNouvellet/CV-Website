@@ -33,7 +33,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "git pull && npm install",
-    "start": "ng serve"
+    "start": "node -e 'process.env.NODE_ENV = process.env.NODE_ENV || \"production\"; require(\"server/app.js\");'"
+
   },
   "repository": {
     "type": "git",
