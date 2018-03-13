@@ -33,8 +33,8 @@
 .bio_section {
   width: 80%;
   height: auto;
-  padding: 7% 0.5em 0.5em;
-  margin-top: 3%;
+  padding: 5em 0.5em 0.5em 0.5em;
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +61,7 @@
 }
 
 .social_icon {
-  margin: 0 0.6em 0 0.6em;
+  margin: 0 1em 0 1em;
   cursor: pointer;
   opacity: 0.4;
 }
@@ -104,7 +104,8 @@
   }
 
   .bio_section {
-    padding-top: 5%;
+    padding-top: 2em;
+    margin-top: 1em;
   }
 
   .btn {
