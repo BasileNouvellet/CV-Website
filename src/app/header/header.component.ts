@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
 }
 
   public changeSuccessMessage() {
-    this._success.next('Email (basile.nouvellet@ponts.org) successfully copied !');
+    this._success.next('Email (basile.nouvellet@ponts.org) successfully copied!');
   }
 
   static copyTextToClipboard(text) {
