@@ -34,7 +34,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "git pull && npm install",
+    "prestart": "npm install",
     "start": "ng serve --prod"
   },
   "repository": {
