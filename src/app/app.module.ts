@@ -5,10 +5,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {RouterModule, Routes} from '@angular/router';
-import {AngularFireModule} from 'angularfire2';
-import {AngularFireDatabaseModule} from 'angularfire2/database-deprecated';
-import {AngularFireAuthModule} from 'angularfire2/auth';
-import {environment} from '../environments/environment';
 import {APP_BASE_HREF} from '@angular/common';
 
 import {AppComponent} from './app.component';
@@ -47,10 +43,6 @@ const routes: Routes = [
     HttpModule,
     RouterModule.forRoot(routes),
     NgbModule.forRoot(),
-    AngularFireModule,
-    AngularFireDatabaseModule,
-    AngularFireAuthModule,
-    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [AuthService, {provide: APP_BASE_HREF, useValue : '/' }],
   bootstrap: [AppComponent, FooterComponent]
