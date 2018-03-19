@@ -8,8 +8,6 @@ import {RouterModule, Routes} from '@angular/router';
 import {APP_BASE_HREF} from '@angular/common';
 
 import {AppComponent} from './app.component';
-import {AuthService} from './providers/auth.service';
-import {LoginPageComponent} from './login-page/login-page.component';
 import {FooterComponent} from './footer/footer.component';
 import {HeaderComponent} from './header/header.component';
 import {ExperiencesComponent} from './experiences/experiences.component';
@@ -21,15 +19,13 @@ import {ProjectsComponent} from './projects/projects.component';
 
 const routes: Routes = [
   { path: '', component: AppComponent },
-  { path: 'login', component: LoginPageComponent },
-  { path: '*', redirectTo: 'login'}
+  {path: '*', redirectTo: ''}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    LoginPageComponent,
     HeaderComponent,
     ExperiencesComponent,
     EducationComponent,
@@ -44,7 +40,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     NgbModule.forRoot(),
   ],
-  providers: [AuthService, {provide: APP_BASE_HREF, useValue : '/' }],
+  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent, FooterComponent]
 })
 export class AppModule { }
