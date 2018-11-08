@@ -2,30 +2,19 @@
 
 import * as React from 'react';
 
-import './header.less';
+import './header.css';
 
 type PropsType = {|
 
 |};
 
-type StateType = {|
+function Header(props: PropsType) {
 
-|};
-
-class Header extends React.Component<PropsType, StateType> {
-    state = {
-
-    };
-
-
-    // ---------------------------------------------------- Render ----------------------------------------------------
-    render(): React.Element<'div'> {
-        return (
-            <div className="header-container">
-                This is Header
-            </div>
-        );
-    }
+    return (
+        <div className="header-container">
+            This is Header
+        </div>
+    );
 }
 
 export default Header;

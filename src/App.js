@@ -5,9 +5,11 @@ import * as React from 'react';
 import Header from './components/Header';
 import Bio from './components/Bio';
 
-import './App.less';
+import './App.css';
 
-class App extends React.Component {
+type PropsType = {||};
+
+class App extends React.Component<PropsType> {
 
   render() {
     return (

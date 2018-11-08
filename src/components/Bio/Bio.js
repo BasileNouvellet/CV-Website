@@ -2,30 +2,19 @@
 
 import * as React from 'react';
 
-import './bio.less';
+import './bio.css';
 
 type PropsType = {|
 
 |};
 
-type StateType = {|
+function Bio(props: PropsType) {
 
-|};
-
-class Bio extends React.Component<PropsType, StateType> {
-
-    state = {
-
-    };
-
-    // ---------------------------------------------------- Render ----------------------------------------------------
-    render(): Element<'div'> {
-        return (
-            <div className="bio-container">
-                This is Bio
-            </div>
-        );
-    }
+    return (
+        <div className="bio-container">
+            This is Bio
+        </div>
+    );
 }
 
 export default Bio;
