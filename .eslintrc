@@ -1,14 +1,19 @@
 {
   "extends": [
     "airbnb",
-    "plugin:flowtype/recommended"
+    "plugin:flowtype/recommended",
+    "plugin:jest/recommended"
   ],
   "plugins": [
     "flowtype",
     "import",
+    "jest",
     "jsx-a11y",
     "react"
   ],
+  "globals": {
+    "document": true
+  },
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   }
