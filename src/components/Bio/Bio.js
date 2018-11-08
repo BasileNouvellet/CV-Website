@@ -2,19 +2,14 @@
 
 import * as React from 'react';
 
-import './bio.css';
+import './Bio.css';
 
-type PropsType = {|
-
-|};
-
-function Bio(props: PropsType) {
-
-    return (
-        <div className="bio-container">
-            This is Bio
-        </div>
-    );
+function Bio() {
+  return (
+    <div className="bio-container">
+      This is Bio
+    </div>
+  );
 }
 
 export default Bio;
