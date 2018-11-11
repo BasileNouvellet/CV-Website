@@ -10,8 +10,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Bio />
+      <div className="app-container">
+        <Header />
+        <Bio />
+      </div>
     </div>
   );
 }

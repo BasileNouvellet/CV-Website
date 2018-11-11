@@ -1,3 +1,13 @@
 #BioButtonsBar {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
     background-color: purple;
+}
+
+.btn-call-to-action {
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: cornflowerblue;
 }
