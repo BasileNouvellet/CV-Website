@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "title": "Some Title",
+      "date": "2013-2019",
+      "company": "Google Inc.",
+      "logo": "assets/img/bcg.jpg",
+      "place": "San Francisco",
+      "text": "Coding project in a French Tech start up as part of my Software development class (HTML, CSS, Typescript, Angular 5)."
+    },
+    {
+      "title": "Some Other Title",
+      "date": "Sept 2013-Oct 2019",
+      "company": "Amazon",
+      "logo": "assets/img/adactive.png",
+      "place": "Paris, France",
+      "text": "Creating web apps to be displayed on Kiosks, those big screens one can see in malls or airports, providing wayfinding to the user for shops & services on an indoor map of the building. Using Javascript (React framework), HTML and CSS. Involving 3D mapping and Data management too."
+    },
+    {
+      "title": "Some Other Title",
+      "date": "Sept 2013-Oct 2019",
+      "company": "Amazon",
+      "logo": "assets/img/adactive.png",
+      "place": "Paris, France",
+      "text": "Creating web apps to be displayed on Kiosks, those big screens one can see in malls or airports, providing wayfinding to the user for shops & services on an indoor map of the building. Using Javascript (React framework), HTML and CSS. Involving 3D mapping and Data management too."
+    }
+  ]
+}

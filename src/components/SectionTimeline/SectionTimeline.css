@@ -1,0 +1,40 @@
+#SectionTimeline {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.line {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10fr 1fr 10fr;
+    grid-template-rows: 1fr 10fr;
+}
+
+.left {
+    grid-template-areas:
+        "card logo       ."
+        "card middleLine .";
+}
+
+.right {
+    grid-template-areas:
+        ". logo       card"
+        ". middleLine card";
+}
+
+.logo {
+    grid-area: logo;
+    max-width: 4em;
+    max-height: 4em;
+}
+
+.middle-line {
+    grid-area: middleLine;
+    width: 100%;
+}
