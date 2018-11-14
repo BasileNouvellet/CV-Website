@@ -5,15 +5,21 @@
     align-items: center;
 }
 
-.title {
+.section-timeline-title {
+    font-size: 1.6em;
     font-weight: bold;
+    padding: 1em 0 2em 0;
 }
 
 .line {
+    box-sizing: border-box;
     width: 100%;
+    padding: 0 3em 0.3em 3em;
     display: grid;
-    grid-template-columns: 10fr 1fr 10fr;
-    grid-template-rows: 1fr 10fr;
+    justify-items: center;
+    column-gap: 2em;
+    grid-template-columns: 10fr minmax(max-content, min-content) 10fr;
+    grid-template-rows: minmax(max-content, min-content) auto;
 }
 
 .left {
@@ -30,11 +36,17 @@
 
 .logo {
     grid-area: logo;
-    max-width: 4em;
-    max-height: 4em;
+    max-width: 25%;
+    padding: 0 0 0.5em 0;
+}
+
+.middle-line-container {
+    grid-area: middleLine;
+    display: flex;
+    justify-content: center;
 }
 
 .middle-line {
-    grid-area: middleLine;
-    width: 100%;
+    width: 0.2em;
+    height: 100%;
 }

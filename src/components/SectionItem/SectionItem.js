@@ -4,6 +4,8 @@ import * as React from 'react';
 
 import './SectionItem.css';
 
+import type { ColorsObjectType } from '../SectionTimeline';
+
 export type SectionItemType = {|
   title: string,
   date: string,
@@ -16,19 +18,18 @@ export type SectionItemType = {|
 type PropsType = {|
   item: SectionItemType,
   position: 'left' | 'right',
-  mainColor: string,
-  secondColor: string,
+  colors: ColorsObjectType,
 |};
 
 // TODO: arrow depending on position
 // TODO: display logo in Header if screen shrinks
 
 function SectionItem(props: PropsType) {
-  const { item, mainColor, secondColor } = props;
+  const { item, colors } = props;
 
-  const headerStyle = { backgroundColor: mainColor };
-  const dateStyle = { color: secondColor };
-  const companyStyle = { color: mainColor };
+  const headerStyle = { backgroundColor: colors.main };
+  const dateStyle = { color: colors.second };
+  const companyStyle = { color: colors.main };
 
   return (
     <div id="SectionItem">

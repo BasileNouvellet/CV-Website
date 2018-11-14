@@ -6,10 +6,14 @@ import SectionItem, { SectionItemType } from '../SectionItem';
 
 import './SectionTimeline.css';
 
+export type ColorsObjectType = {|
+  main: string,
+  second: string,
+|};
+
 type PropsType = {|
   title: string,
-  mainColor: string,
-  secondColor: string,
+  colors: ColorsObjectType,
   items: Array<SectionItemType>,
 |};
 
@@ -17,20 +21,18 @@ type PropsType = {|
 
 function renderSectionTimeline(
   items: Array<SectionItemType>,
-  mainColor: string,
-  secondColor: string,
+  colors: ColorsObjectType,
 ) {
   return items.map((item: SectionItemType, index: number) => {
     const position = index % 2 === 0 ? 'left' : 'right';
     const lineClass = `line ${position}`;
-    const middleLineStyle = { backgroundColor: secondColor };
+    const middleLineStyle = { backgroundColor: colors.second };
 
     return (
-      <div className={lineClass}>
+      <div className={lineClass} key={item.title + item.date}>
         <SectionItem
           item={item}
-          mainColor={mainColor}
-          secondColor={secondColor}
+          colors={colors}
           position={position}
         />
 
@@ -40,24 +42,24 @@ function renderSectionTimeline(
           className="logo"
         />
 
-        <div className="middle-line" style={middleLineStyle} />
+        <div className="middle-line-container">
+          <div className="middle-line" style={middleLineStyle} />
+        </div>
       </div>
     );
   });
 }
 
 function SectionTimeline(props: PropsType) {
-  const {
-    title, mainColor, secondColor, items,
-  } = props;
+  const { title, colors, items } = props;
 
-  const titleStyle = { color: mainColor };
+  const titleStyle = { color: colors.main };
 
   return (
     <div id="SectionTimeline" style={titleStyle}>
-      <div className="title">{title}</div>
+      <div className="section-timeline-title">{title}</div>
 
-      {renderSectionTimeline(items, mainColor, secondColor)}
+      {renderSectionTimeline(items, colors)}
     </div>
   );
 }

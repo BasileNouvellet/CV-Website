@@ -20,8 +20,10 @@ function App() {
 
         <SectionTimeline
           title="Experiences"
-          mainColor="green"
-          secondColor="lightgreen"
+          colors={{
+            main: '#009688',
+            second: '#80CBC4',
+          }}
           items={experiences.items}
         />
       </div>

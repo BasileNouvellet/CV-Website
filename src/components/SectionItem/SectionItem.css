@@ -1,13 +1,20 @@
 #SectionItem {
     grid-area: card;
+    max-width: 70%;
+    background-color: white;
+    margin: 0 0 0.5em 0;
 }
 
 .header {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .title {
-
+    color: white;
+    font-weight: bold;
 }
 
 .date {
@@ -19,7 +26,9 @@
 }
 
 .sub-header {
-
+    display: flex;
+    justify-content: space-between;
+    background-color: #cecece;
 }
 
 .company {
