@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     font-size: calc(7px + .5vw);
+    background: whitesmoke url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .app-container {
@@ -11,5 +12,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightgrey;
+    background-color: whitesmoke;
+    box-shadow: 0 0.3em 1em 0 rgba(65, 65, 65, 0.2);
 }

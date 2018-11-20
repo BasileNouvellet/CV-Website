@@ -3,6 +3,8 @@
     width: 100%;
     background-color: white;
     margin: 0 0 2em 0;
+    border-radius: 0.3em;
+    box-shadow: 0 0.3em 1em 0 rgba(65, 65, 65, 0.2);
 }
 
 .header {
@@ -11,6 +13,9 @@
     justify-content: center;
     align-items: flex-start;
     padding: 0.6em;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    box-shadow: 0 0.3em 1em 0 rgba(65, 65, 65, 0.2);
 }
 
 .title {

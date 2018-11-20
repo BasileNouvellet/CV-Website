@@ -6,29 +6,40 @@
     flex-direction: column;
     align-items: center;
     background-color: red;
-    margin: 0 0 2em 0;
+    margin: 0 0 4em 0;
 }
 
 .top-header {
+    box-sizing: border-box;
     flex: 1;
     width: 100%;
-    background-color: darkgrey;
+    background-color: #414141;
+    border: 1em solid #414141;
+    box-shadow: 0 0.2em 0.2em #353535;
+    z-index: 2;
 }
 
 .bottom-header {
+    box-sizing: border-box;
     flex: 5;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: grey;
-    color: white;
+    background-color: #595959;
+    color: #ffffff;
+    padding: .5em .5em 7em .5em;
+    border: 1em solid #595959;
+    box-shadow: 0 0.2em 0.2em #b1b1b1;
 }
 
 .name {
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 .subtitle {
     font-size: 0.8em;
+    font-weight: lighter;
+    padding: 1em;
 }
