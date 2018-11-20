@@ -2,10 +2,12 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    font-size: calc(7px + .5vw);
 }
 
 .app-container {
-    width: 70%;
+    width: 70vw;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;

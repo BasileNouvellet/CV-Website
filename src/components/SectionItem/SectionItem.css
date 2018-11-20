@@ -1,8 +1,8 @@
 #SectionItem {
     grid-area: card;
-    max-width: 70%;
+    width: 100%;
     background-color: white;
-    margin: 0 0 0.5em 0;
+    margin: 0 0 2em 0;
 }
 
 .header {
@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 0.6em;
 }
 
 .title {
@@ -18,7 +19,7 @@
 }
 
 .date {
-
+    font-size: small;
 }
 
 .body {
@@ -28,17 +29,19 @@
 .sub-header {
     display: flex;
     justify-content: space-between;
-    background-color: #cecece;
+    align-items: center;
+    padding: 0.6em 0.6em 0 0.6em;
 }
 
 .company {
-
+    font-weight: bold;
 }
 
 .place {
-
+    font-size: small;
 }
 
 .text {
-
+    color: black;
+    padding: 0.6em;
 }
