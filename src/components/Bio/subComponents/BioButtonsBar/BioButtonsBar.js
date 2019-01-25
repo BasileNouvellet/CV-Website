@@ -9,17 +9,15 @@ type ButtonPropsType = {|
   onClick: () => void;
 |};
 
+const openNewTab = (link: string) => () => { window.open(link, '_blank'); };
+
 function Button(props: ButtonPropsType) {
   const { text, onClick } = props;
 
   return (
-    <button
-      className="btn-call-to-action"
-      type="button"
-      onClick={onClick}
-    >
+    <div className="btn-call-to-action" onClick={onClick}>
       {text}
-    </button>
+    </div>
   );
 }
 
@@ -28,12 +26,12 @@ function BioButtonsBar() {
     <div id="BioButtonsBar">
       <Button
         text="Download CV"
-        onClick={() => null}
+        onClick={openNewTab('./assets/Resume_Basile_NOUVELLET.pdf')}
       />
 
       <Button
         text="Contact Me"
-        onClick={() => null}
+        onClick={openNewTab('mailto:basile.nouvellet@ponts.org')}
       />
     </div>
   );

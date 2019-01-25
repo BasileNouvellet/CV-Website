@@ -2,7 +2,7 @@
     width: 60%;
     display: flex;
     justify-content: space-between;
-    background-color: purple;
+    margin: 3em 0;
 }
 
 .btn-call-to-action {
@@ -10,4 +10,8 @@
     font-weight: bold;
     text-transform: capitalize;
     background-color: cornflowerblue;
+    padding: .5em 1em;
+    border-radius: 5px;
+    box-shadow: 0 0.3em 1em 0 rgba(65, 65, 65, 0.2);
+    user-select: none;
 }
