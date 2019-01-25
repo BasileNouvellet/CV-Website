@@ -1,2 +1,4 @@
 # service-worker from Create-React-App
 src/serviceWorker.js
+
+node_modules/
