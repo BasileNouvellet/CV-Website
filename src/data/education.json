@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "title": "Master's degree in Economics, Management and Finance",
+      "date": "2016 - 2020",
+      "company": "Ecole des Ponts ParisTech",
+      "logo": "assets/img/ponts.png",
+      "place": "Paris, France",
+      "text": "Currently in the 2nd year of a Master's degree in one of the top French engineering schools, I'm studying Corporate Finance, Market finance, Mergers & Acquisitions, Software development, Theory of Games, Statistics, Econometry and Operational research."
+    },
+    {
+      "title": "Engineering Preparatory class",
+      "date": "2014 - 2016",
+      "company": "Lycée aux Lazaristes",
+      "logo": "assets/img/lazos.png",
+      "place": "Lyon, France",
+      "text": "Intensive and hard working preparatory class for the Grandes Ecoles d'Ingénieur entrance exam on mathematics, physics and engineering science."
+    },
+    {
+      "title": "Baccalauréat Scientifique",
+      "date": "2014",
+      "company": "Lycée des Maristes",
+      "logo": "assets/img/maristes.png",
+      "place": "Lyon, France",
+      "text": "with the distinction of the jury."
+    }
+  ]
+}

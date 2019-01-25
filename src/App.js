@@ -7,6 +7,7 @@ import Bio from './components/Bio';
 import SectionTimeline from './components/SectionTimeline';
 
 import EXPERIENCES from './data/experiences.json';
+import EDUCATION from './data/education.json';
 
 import './App.css';
 
@@ -33,6 +34,12 @@ function App() {
           title="Experiences"
           items={EXPERIENCES.items}
           colors={THEME.experiences}
+        />
+
+        <SectionTimeline
+          title="Education"
+          items={EDUCATION.items}
+          colors={THEME.education}
         />
       </div>
     </div>
