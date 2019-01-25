@@ -21,31 +21,59 @@ type PropsType = {|
   colors: ColorsObjectType,
 |};
 
-// TODO: arrow depending on position
 // TODO: display logo in Header if screen shrinks
 
-function SectionItem(props: PropsType) {
-  const { item, colors } = props;
+function renderSectionItemHeader(item, style) {
+  return (
+    <div className="header" style={style.header}>
+      <div className="arrow-container" style={style.arrowContainer}>
+        <div className="arrow" style={style.arrow} />
+      </div>
 
-  const headerStyle = { backgroundColor: colors.main };
-  const dateStyle = { color: colors.second };
-  const companyStyle = { color: colors.main };
+      <div className="title">{item.title}</div>
+      <div className="date" style={style.date}>{item.date}</div>
+    </div>
+  );
+}
+
+function renderSectionItemBody(item, style) {
+  return (
+    <div className="body">
+      <div className="sub-header">
+        <div className="company" style={style.company}>{item.company}</div>
+        <div className="place">{item.place}</div>
+      </div>
+
+      <div className="text">{item.text}</div>
+    </div>
+  );
+}
+
+function SectionItem(props: PropsType) {
+  const { item, colors, position } = props;
+
+  const style = {
+    header: {
+      backgroundColor: colors.main,
+    },
+    date: {
+      color: colors.second,
+    },
+    company: {
+      color: colors.main,
+    },
+    arrowContainer: {
+      [`${position === 'left' ? 'right' : 'left'}`]: '-0.6em',
+    },
+    arrow: {
+      backgroundColor: colors.main,
+    },
+  };
 
   return (
     <div id="SectionItem">
-      <div className="header" style={headerStyle}>
-        <div className="title">{item.title}</div>
-        <div className="date" style={dateStyle}>{item.date}</div>
-      </div>
-
-      <div className="body">
-        <div className="sub-header">
-          <div className="company" style={companyStyle}>{item.company}</div>
-          <div className="place">{item.place}</div>
-        </div>
-
-        <div className="text">{item.text}</div>
-      </div>
+      {renderSectionItemHeader(item, style)}
+      {renderSectionItemBody(item, style)}
     </div>
   );
 }
