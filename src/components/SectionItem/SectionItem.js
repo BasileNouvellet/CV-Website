@@ -71,10 +71,10 @@ function SectionItem(props: PropsType) {
   };
 
   return (
-    <div id="SectionItem">
+    <>
       {renderSectionItemHeader(item, style)}
       {renderSectionItemBody(item, style)}
-    </div>
+    </>
   );
 }
 

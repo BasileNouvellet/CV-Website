@@ -25,20 +25,22 @@
 
 .left {
     grid-template-areas:
-        ". card . logo       . . ."
-        ". card . middleLine . . .";
+        ". cardHeader . logo       . . ."
+        ". cardBody   . middleLine . . .";
 }
 
 .right {
     grid-template-areas:
-        ". . . logo       . card ."
-        ". . . middleLine . card .";
+        ". . . logo       . cardHeader ."
+        ". . . middleLine . cardBody   .";
 }
 
 .logo {
     grid-area: logo;
-    width: 100%;
-    padding: 0 0 0.5em 0;
+    max-height: 3.5em;
+    max-width: 100%;
+    padding: .5em 0;
+    margin: auto 0;
 }
 
 .middle-line-container {
