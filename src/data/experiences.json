@@ -1,28 +1,60 @@
 {
   "items": [
     {
-      "title": "Some Title",
-      "date": "2013-2019",
-      "company": "Google Inc.",
-      "logo": "assets/img/bcg.jpg",
-      "place": "San Francisco",
+      "title": "Full Stack Developer Intern",
+      "date": "July 2018 - January 2019",
+      "company": "Adactive",
+      "logo": "assets/img/adactive.png",
+      "place": "Singapore",
+      "text": "Creating web apps to be displayed on Kiosks, those big screens one can see in malls or airports, providing wayfinding to the user for shops & services on an indoor map of the building. Using Javascript (React framework), HTML and CSS. Involving 3D mapping and Data management too."
+    },
+    {
+      "title": "Front-End Developer",
+      "date": "November 2017 - February 2018",
+      "company": "Harvestr",
+      "logo": "assets/img/harvestr.png",
+      "place": "Paris, France",
       "text": "Coding project in a French Tech start up as part of my Software development class (HTML, CSS, Typescript, Angular 5)."
     },
     {
-      "title": "Some Other Title",
-      "date": "Sept 2013-Oct 2019",
-      "company": "Amazon",
-      "logo": "assets/img/adactive.png",
+      "title": "1st prize - Winning Team",
+      "date": "November 2017",
+      "company": "Une Nuit pour Entreprendre",
+      "logo": "assets/img/ponts.png",
       "place": "Paris, France",
-      "text": "Creating web apps to be displayed on Kiosks, those big screens one can see in malls or airports, providing wayfinding to the user for shops & services on an indoor map of the building. Using Javascript (React framework), HTML and CSS. Involving 3D mapping and Data management too."
+      "text": "Member of the winning team of Une Nuit pour Entreprendre at Ecole des Ponts ParisTech: a sleepless night competition, where we created a start up and pitched it in front of a jury in the morning. We were coached and challenged by entrepreneurs and professionals. Our start up was on a geolocalized public urban lighting."
     },
     {
-      "title": "Some AnOther Title",
-      "date": "Sept 2013-Oct 2019",
-      "company": "Amazon",
-      "logo": "assets/img/adactive.png",
+      "title": "Full-Stack Developer",
+      "date": "March 2017 - December 2017",
+      "company": "Town Hall of Paris",
+      "logo": "assets/img/mairie.png",
       "place": "Paris, France",
-      "text": "Creating web apps to be displayed on Kiosks, those big screens one can see in malls or airports, providing wayfinding to the user for shops & services on an indoor map of the building. Using Javascript (React framework), HTML and CSS. Involving 3D mapping and Data management too."
+      "text": "Developing with HTML, CSS, Javascript and AngularJS the website for an automatic ID card reading and Python for some back-end work, in partnership with the Junior Enterprise of my school."
+    },
+    {
+      "title": "Automatic slides generator",
+      "date": "February 2017 - May 2017",
+      "company": "Department Project",
+      "logo": "assets/img/bcg.jpg",
+      "place": "Paris, France",
+      "text": "Department project backed by the Boston Consulting Group during which we developed an automatic Power Point slides generator from any Word document, using Python mainly but also a little bit of XML."
+    },
+    {
+      "title": "Assistant",
+      "date": "June 2017 - July 2017",
+      "company": "Pogo Structures",
+      "logo": "assets/img/pogo.png",
+      "place": "Quimper, France",
+      "text": "Multitasked worker on the Pogo Structures shipyard, the leading race sailing boat builder located in Brittany, France."
+    },
+    {
+      "title": "Computer teacher & Bug resolver",
+      "date": "2016 - 2018",
+      "company": "Update You",
+      "logo": "assets/img/updateYou.png",
+      "place": "Region of Paris, France",
+      "text": "Teaching computer usage and resolving technological issues at my clients' home, during missions as a self-entrepreneur in a french tech start up."
     }
   ]
 }

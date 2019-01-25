@@ -46,6 +46,7 @@
 .date {
     z-index: 1;
     font-size: small;
+    font-weight: bold;
 }
 
 .body {
@@ -65,6 +66,8 @@
 
 .place {
     font-size: small;
+    font-weight: bold;
+    color: black;
 }
 
 .text {
