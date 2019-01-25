@@ -1,5 +1,9 @@
 #SocialBar {
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
+}
+
+.btn-social-img {
+    width: 25px;
 }

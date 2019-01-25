@@ -6,9 +6,20 @@ import Header from './components/Header';
 import Bio from './components/Bio';
 import SectionTimeline from './components/SectionTimeline';
 
-import experiences from './data/experiences.json';
+import EXPERIENCES from './data/experiences.json';
 
 import './App.css';
+
+const THEME = {
+  experiences: {
+    main: '#009688',
+    second: '#80CBC4',
+  },
+  education: {
+    main: '#961818',
+    second: '#cb4640',
+  },
+};
 
 function App() {
   return (
@@ -20,11 +31,8 @@ function App() {
 
         <SectionTimeline
           title="Experiences"
-          colors={{
-            main: '#009688',
-            second: '#80CBC4',
-          }}
-          items={experiences.items}
+          items={EXPERIENCES.items}
+          colors={THEME.experiences}
         />
       </div>
     </div>
