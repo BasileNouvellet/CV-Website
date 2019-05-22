@@ -17,6 +17,9 @@ config :cv_website, CvWebsite.Repo,
 # with webpack to recompile .js and .css sources.
 config :cv_website, CvWebsiteWeb.Endpoint,
   http: [port: 4000],
+  live_view: [
+    signing_salt: "BPIgGD6iovUbt3zo4MZ0B+YiAgOsY5yN"
+  ],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
@@ -61,7 +64,8 @@ config :cv_website, CvWebsiteWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/cv_website_web/{live,views}/.*(ex)$",
-      ~r"lib/cv_website_web/templates/.*(eex)$"
+      ~r"lib/cv_website_web/templates/.*(eex)$",
+      ~r{lib/teacher_web/live/.*(ex)$}
     ]
   ]
 

@@ -42,6 +42,9 @@ defmodule CvWebsiteWeb do
       import CvWebsiteWeb.ErrorHelpers
       import CvWebsiteWeb.Gettext
       alias CvWebsiteWeb.Router.Helpers, as: Routes
+
+      # LiveView
+      import Phoenix.LiveView, only: [live_render: 2, live_render: 3]
     end
   end
 
@@ -50,6 +53,9 @@ defmodule CvWebsiteWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+    
+      # LiveView
+      import Phoenix.LiveView.Router
     end
   end
 

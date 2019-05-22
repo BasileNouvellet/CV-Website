@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+
+# This is run INSIDE the API Docker container
+
+. "$PWD/dev/utils.sh"
+
+(
+    cd $PWD
+
+    info "Starting PROD app..."
+
+    info "( 1 / 2 ) Installing dependencies..."
+    ENV=prod dev/bin/install
+
+    info "( 1 / 2 ) Dependencies installed!"
+
+    info "( 2 / 2 ) Generating database..."
+    MIX_ENV=prod mix compile
+    POOL_SIZE=2 MIX_ENV=prod mix ecto.setup
+
+    info "( 2 / 2 ) Database generated!"
+
+    info "~ ~ API is ready! Starting server..."
+    iex -S mix phx.server
+)

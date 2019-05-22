@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+(
+    cd $PWD
+
+    docker stop cv_website_db_dev || true
+
+    docker run                                                  \
+        --name "cv_website_db_dev"                              \
+        -p "5432:5432"                                          \
+        --volume "cv_website_dev:/var/lib/postgresql/data"      \
+        -d                                                      \
+        --rm                                                    \
+        "postgres:11.2-alpine"
+
+    docker ps --all
+)
